@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "education": "Образование",
+    "skills": "Навыки",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "name": "Лунес Баджи",
+    "title": "Lead Front-End Developer & Full Stack инженер",
+    "subtitle": "Увлечён разработкой программного обеспечения с глубокой экспертизой в SaaS, DDD/CQRS и современных архитектурах.",
+    "cta": "Узнать мой путь",
+    "download": "Скачать резюме"
+  },
+  "about": {
+    "title": "Обо мне",
+    "description": "Выпускник инженерного факультета CPE Lyon, я — увлечённый Full Stack разработчик с более чем 8-летним опытом в проектировании и разработке инновационных программных решений. Я работал в таких известных компаниях, как Louis Vuitton, Agicap и Tessi, привнося свою экспертизу в современных архитектурах и разработке SaaS.",
+    "location": "Лион, Франция",
+    "experience_years": "8+ лет опыта",
+    "projects": "43+ проектов на GitHub"
+  },
+  "experience": {
+    "title": "Профессиональный опыт",
+    "roles": {
+      "tessi": {
+        "company": "Tessi",
+        "role": "Lead Front-End Developer",
+        "period": "2023 - настоящее время",
+        "description": "Техническое руководство фронтенд-разработкой, внедрение масштабируемых архитектур и менторство команды."
+      },
+      "globaz": {
+        "company": "GLOBAZ SA",
+        "role": "Software Engineer",
+        "period": "ноябрь 2022 - апрель 2023",
+        "description": "Разработка SaaS-решений для сектора социального страхования в Швейцарии."
+      },
+      "agicap": {
+        "company": "Agicap",
+        "role": "Software Engineer",
+        "period": "ноябрь 2021 - август 2022",
+        "description": "Full Stack разработка платформы управления денежными потоками. Внедрение паттернов DDD/CQRS и улучшение сплочённости команды."
+      },
+      "lv": {
+        "company": "Louis Vuitton",
+        "role": "Software Engineer",
+        "period": "ноябрь 2019 - ноябрь 2021",
+        "description": "Разработка цифровых решений для дома моды класса люкс с фокусом на качество и техническое совершенство."
+      },
+      "mygladys": {
+        "company": "MyGladys",
+        "role": "Lead Software Engineer",
+        "period": "декабрь 2018 - июнь 2019",
+        "description": "Техническое руководство и разработка платформы цифрового консьержа."
+      },
+      "icoges": {
+        "company": "ICOGES",
+        "role": "Преподаватель",
+        "period": "февраль 2018 - февраль 2019",
+        "description": "Преподавание веб-разработки и современных технологий студентам."
+      },
+      "ubilab": {
+        "company": "Ubilab.io",
+        "role": "Lead Front Developer",
+        "period": "сентябрь 2016 - декабрь 2018",
+        "description": "Руководство фронтенд-разработкой и внедрение современных архитектур React."
+      },
+      "trainme": {
+        "company": "TrainMe",
+        "role": "Mobile Software Engineer",
+        "period": "февраль 2016 - июль 2016",
+        "description": "Разработка мобильных приложений для платформы спортивного коучинга."
+      }
+    }
+  },
+  "education": {
+    "title": "Образование",
+    "schools": {
+      "cpe": {
+        "school": "CPE Lyon",
+        "degree": "Диплом инженера",
+        "field": "Информатика и электроника",
+        "description": "Высшая школа химии, физики и электроники Лиона"
+      },
+      "chartreux": {
+        "school": "Institution des Chartreux",
+        "degree": "Подготовительные классы",
+        "field": "Интегрированные подготовительные классы для CPE Lyon",
+        "description": "Подготовка к инженерному образованию"
+      },
+      "saintjust": {
+        "school": "Lycée Saint Just",
+        "degree": "Бакалавриат",
+        "field": "Естественнонаучный",
+        "description": "Естественнонаучный диплом средней школы"
+      }
+    }
+  },
+  "skills": {
+    "title": "Навыки",
+    "categories": {
+      "frontend": "Front-End",
+      "backend": "Back-End",
+      "architecture": "Архитектура",
+      "tools": "Инструменты и DevOps",
+      "soft": "Гибкие навыки"
+    },
+    "items": {
+      "frontend": "React, Next.js, Angular, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Redux, RxJS",
+      "backend": "Node.js, Java, NestJS, Express, REST API, GraphQL",
+      "architecture": "DDD, CQRS, Microservices, Clean Architecture, Design Patterns",
+      "tools": "Git, Docker, CI/CD, GitHub Actions, Jest, Cypress",
+      "soft": "Техническое лидерство, Менторство, Agile-методологии, Коммуникация, Командная работа"
+    }
+  },
+  "contact": {
+    "title": "Связаться со мной",
+    "subtitle": "Заинтересовал мой профиль? Не стесняйтесь связаться со мной!",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Электронная почта"
+  },
+  "chatbot": {
+    "title": "Ассистент резюме",
+    "placeholder": "Задайте вопрос о моём резюме...",
+    "send": "Отправить",
+    "greeting": "Привет! Я ассистент Лунеса. Спрашивайте о его карьере, навыках или опыте!",
+    "fallback": "Я не уверен, что понимаю ваш вопрос. Попробуйте спросить об опыте, образовании, навыках или проектах Лунеса.",
+    "responses": {
+      "experience": "У Лунеса более 8 лет опыта. В настоящее время он является Lead Front-End Developer в Tessi. Ранее он работал в GLOBAZ SA, Agicap, Louis Vuitton, MyGladys, ICOGES (преподавателем), Ubilab.io и TrainMe.",
+      "skills": "Лунес владеет React, Next.js, Angular, TypeScript, Node.js, Java, NestJS. Он эксперт в архитектурах DDD/CQRS, микросервисах и Clean Architecture. Также практикует Docker, CI/CD и agile-методологии.",
+      "education": "Лунес имеет диплом инженера CPE Lyon (Высшая школа химии, физики и электроники Лиона). Он прошёл подготовительные классы в Institution des Chartreux и получил бакалавриат в Lycée Saint Just.",
+      "location": "Лунес живёт в регионе Лион, Франция.",
+      "lv": "В Louis Vuitton (ноябрь 2019 - ноябрь 2021) Лунес разрабатывал цифровые решения для дома моды класса люкс с фокусом на качество и техническое совершенство.",
+      "agicap": "В Agicap (ноябрь 2021 - август 2022) Лунес работал Full Stack разработчиком над платформой управления денежными потоками, внедряя паттерны DDD/CQRS.",
+      "current": "В настоящее время Лунес является Lead Front-End Developer в Tessi, где он руководит фронтенд-разработкой и внедряет масштабируемые архитектуры.",
+      "github": "У Лунеса более 43 репозиториев на GitHub. Его профиль — github.com/badjilounes.",
+      "languages": "Лунес работает преимущественно с TypeScript, JavaScript и Java.",
+      "teaching": "Лунес был преподавателем в ICOGES (февраль 2018 - февраль 2019), где преподавал веб-разработку и современные технологии."
+    }
+  },
+  "footer": {
+    "rights": "Все права защищены.",
+    "made": "Сделано с"
+  }
+}

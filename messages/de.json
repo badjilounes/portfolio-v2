@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Lounes Badji",
+    "title": "Lead Front-End Developer & Full Stack Ingenieur",
+    "subtitle": "Leidenschaftlich für Softwareentwicklung mit fundierter Expertise in SaaS, DDD/CQRS und modernen Architekturen.",
+    "cta": "Entdecke meinen Werdegang",
+    "download": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Als Ingenieurabsolvent der CPE Lyon bin ich ein leidenschaftlicher Full Stack Entwickler mit über 8 Jahren Erfahrung in der Konzeption und Entwicklung innovativer Softwarelösungen. Ich habe für renommierte Unternehmen wie Louis Vuitton, Agicap und Tessi gearbeitet und meine Expertise in modernen Architekturen und SaaS-Entwicklung eingebracht.",
+    "location": "Standort: Lyon, Frankreich",
+    "experience_years": "8+ Jahre Erfahrung",
+    "projects": "43+ Projekte auf GitHub"
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "roles": {
+      "tessi": {
+        "company": "Tessi",
+        "role": "Lead Front-End Developer",
+        "period": "2023 - Heute",
+        "description": "Technische Leitung der Front-End-Entwicklung, Implementierung skalierbarer Architekturen und Team-Mentoring."
+      },
+      "globaz": {
+        "company": "GLOBAZ SA",
+        "role": "Software Engineer",
+        "period": "Nov 2022 - Apr 2023",
+        "description": "Entwicklung von SaaS-Softwarelösungen für den Bereich der Sozialversicherungen in der Schweiz."
+      },
+      "agicap": {
+        "company": "Agicap",
+        "role": "Software Engineer",
+        "period": "Nov 2021 - Aug 2022",
+        "description": "Full Stack Entwicklung der Cash-Management-Plattform. Implementierung von DDD/CQRS-Patterns und Verbesserung des Teamzusammenhalts."
+      },
+      "lv": {
+        "company": "Louis Vuitton",
+        "role": "Software Engineer",
+        "period": "Nov 2019 - Nov 2021",
+        "description": "Entwicklung digitaler Lösungen für das Luxushaus mit Fokus auf Qualität und technische Exzellenz."
+      },
+      "mygladys": {
+        "company": "MyGladys",
+        "role": "Lead Software Engineer",
+        "period": "Dez 2018 - Jun 2019",
+        "description": "Technische Leitung und Entwicklung der digitalen Concierge-Plattform."
+      },
+      "icoges": {
+        "company": "ICOGES",
+        "role": "Dozent",
+        "period": "Feb 2018 - Feb 2019",
+        "description": "Unterricht in Webentwicklung und modernen Technologien für Studierende."
+      },
+      "ubilab": {
+        "company": "Ubilab.io",
+        "role": "Lead Front Developer",
+        "period": "Sep 2016 - Dez 2018",
+        "description": "Leitung der Front-End-Entwicklung und Implementierung moderner React-Architekturen."
+      },
+      "trainme": {
+        "company": "TrainMe",
+        "role": "Mobile Software Engineer",
+        "period": "Feb 2016 - Jul 2016",
+        "description": "Entwicklung mobiler Anwendungen für die Sport-Coaching-Plattform."
+      }
+    }
+  },
+  "education": {
+    "title": "Ausbildung",
+    "schools": {
+      "cpe": {
+        "school": "CPE Lyon",
+        "degree": "Ingenieurabschluss",
+        "field": "Informatik & Elektronik",
+        "description": "Hochschule für Chemie, Physik und Elektronik von Lyon"
+      },
+      "chartreux": {
+        "school": "Institution des Chartreux",
+        "degree": "Vorbereitungsklassen",
+        "field": "Integrierte Vorbereitungsklassen für CPE Lyon",
+        "description": "Vorbereitung auf das Ingenieurstudium"
+      },
+      "saintjust": {
+        "school": "Lycée Saint Just",
+        "degree": "Abitur",
+        "field": "Naturwissenschaftlich",
+        "description": "Naturwissenschaftliches Abitur"
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "categories": {
+      "frontend": "Front-End",
+      "backend": "Back-End",
+      "architecture": "Architektur",
+      "tools": "Tools & DevOps",
+      "soft": "Soft Skills"
+    },
+    "items": {
+      "frontend": "React, Next.js, Angular, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Redux, RxJS",
+      "backend": "Node.js, Java, NestJS, Express, REST API, GraphQL",
+      "architecture": "DDD, CQRS, Microservices, Clean Architecture, Design Patterns",
+      "tools": "Git, Docker, CI/CD, GitHub Actions, Jest, Cypress",
+      "soft": "Technische Führung, Mentoring, Agile Methoden, Kommunikation, Teamarbeit"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Interesse an meinem Profil? Zögern Sie nicht, mich zu kontaktieren!",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-Mail"
+  },
+  "chatbot": {
+    "title": "CV-Assistent",
+    "placeholder": "Stellen Sie eine Frage zu meinem CV...",
+    "send": "Senden",
+    "greeting": "Hallo! Ich bin der Assistent von Lounes. Fragen Sie mich über seinen Werdegang, seine Fähigkeiten oder seine Erfahrung!",
+    "fallback": "Ich bin mir nicht sicher, ob ich Ihre Frage verstehe. Versuchen Sie, nach Erfahrung, Ausbildung, Fähigkeiten oder Projekten von Lounes zu fragen.",
+    "responses": {
+      "experience": "Lounes hat über 8 Jahre Erfahrung. Er ist derzeit Lead Front-End Developer bei Tessi. Zuvor arbeitete er bei GLOBAZ SA, Agicap, Louis Vuitton, MyGladys, ICOGES (als Dozent), Ubilab.io und TrainMe.",
+      "skills": "Lounes beherrscht React, Next.js, Angular, TypeScript, Node.js, Java, NestJS. Er ist Experte für DDD/CQRS-Architekturen, Microservices und Clean Architecture. Er praktiziert auch Docker, CI/CD und agile Methoden.",
+      "education": "Lounes hat einen Ingenieurabschluss von CPE Lyon (Hochschule für Chemie, Physik und Elektronik von Lyon). Er absolvierte seine Vorbereitungsklassen an der Institution des Chartreux und sein Abitur am Lycée Saint Just.",
+      "location": "Lounes lebt in der Region Lyon, Frankreich.",
+      "lv": "Bei Louis Vuitton (Nov 2019 - Nov 2021) entwickelte Lounes digitale Lösungen für das Luxushaus mit Fokus auf Qualität und technische Exzellenz.",
+      "agicap": "Bei Agicap (Nov 2021 - Aug 2022) arbeitete Lounes als Full Stack Entwickler an der Cash-Management-Plattform und implementierte DDD/CQRS-Patterns.",
+      "current": "Derzeit ist Lounes Lead Front-End Developer bei Tessi, wo er die Front-End-Entwicklung leitet und skalierbare Architekturen implementiert.",
+      "github": "Lounes hat über 43 Repositories auf GitHub. Sein Profil ist github.com/badjilounes.",
+      "languages": "Lounes arbeitet hauptsächlich mit TypeScript, JavaScript und Java.",
+      "teaching": "Lounes war Dozent bei ICOGES (Feb 2018 - Feb 2019), wo er Webentwicklung und moderne Technologien unterrichtete."
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "made": "Erstellt mit"
+  }
+}
