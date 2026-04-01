@@ -19,7 +19,28 @@
     "description": "A CPE Lyon engineering graduate, I am a passionate Full Stack developer with over 8 years of experience in designing and developing innovative software solutions. I have worked for renowned companies like Louis Vuitton, Agicap, and Tessi, bringing my expertise in modern architectures and SaaS development.",
     "location": "Based in Lyon, France",
     "experience_years": "8+ years of experience",
-    "projects": "43+ projects on GitHub"
+    "projects": "60+ projects on GitHub"
+  },
+  "featured": {
+    "title": "Trusted by industry leaders",
+    "lv": {
+      "company": "Louis Vuitton",
+      "role": "Software Engineer",
+      "period": "Nov 2019 - Nov 2021",
+      "description": "Developed digital solutions for the French luxury house. Designed performant and maintainable front-end architectures for internal tools and customer experiences."
+    },
+    "tessi": {
+      "company": "Tessi",
+      "role": "Lead Front-End Developer",
+      "period": "2023 - Present",
+      "description": "Technical leadership of front-end development. Implementing scalable architectures, systematic code reviews, and mentoring a team of developers."
+    },
+    "agicap": {
+      "company": "Agicap",
+      "role": "Software Engineer",
+      "period": "Nov 2021 - Aug 2022",
+      "description": "Full Stack development of the cash management platform. Implemented DDD/CQRS patterns for a robust and scalable architecture."
+    }
   },
   "experience": {
     "title": "Professional Experience",
@@ -121,12 +142,17 @@
     "linkedin": "LinkedIn",
     "email": "Email"
   },
+  "theme": {
+    "toggle": "Toggle theme",
+    "dark": "Dark",
+    "light": "Light"
+  },
   "chatbot": {
     "title": "CV Assistant",
     "placeholder": "Ask a question about my CV...",
     "send": "Send",
     "greeting": "Hello! I'm Lounes's assistant. Ask me about his background, skills, or experience!",
-    "fallback": "I'm not sure I understand your question. Try asking about Lounes's experience, education, skills, or projects.",
+    "fallback": "I'm not sure I understand your question. Here's what I can tell you about: career path, technical skills, education, companies (Louis Vuitton, Tessi, Agicap...), methodologies, leadership, or how to contact Lounes.",
     "responses": {
       "experience": "Lounes has over 8 years of experience. He is currently Lead Front-End Developer at Tessi. Previously, he worked at GLOBAZ SA, Agicap, Louis Vuitton, MyGladys, ICOGES (as a teacher), Ubilab.io, and TrainMe.",
       "skills": "Lounes is proficient in React, Next.js, Angular, TypeScript, Node.js, Java, NestJS. He is an expert in DDD/CQRS architectures, microservices, and Clean Architecture. He also practices Docker, CI/CD, and agile methodologies.",
@@ -135,9 +161,22 @@
       "lv": "At Louis Vuitton (Nov 2019 - Nov 2021), Lounes developed digital solutions for the luxury house, focusing on quality and technical excellence.",
       "agicap": "At Agicap (Nov 2021 - Aug 2022), Lounes worked as a Full Stack developer on the cash management platform, implementing DDD/CQRS patterns.",
       "current": "Currently, Lounes is Lead Front-End Developer at Tessi, where he leads front-end development and implements scalable architectures.",
-      "github": "Lounes has 43+ repositories on GitHub. His profile is github.com/badjilounes.",
+      "github": "Lounes has 60+ repositories on GitHub. His profile is github.com/badjilounes.",
       "languages": "Lounes primarily works with TypeScript, JavaScript, and Java.",
-      "teaching": "Lounes was a teacher at ICOGES (Feb 2018 - Feb 2019), where he taught web development and modern technologies."
+      "teaching": "Lounes was a teacher at ICOGES (Feb 2018 - Feb 2019), where he taught web development and modern technologies.",
+      "hello": "Hello! I'm Lounes's virtual assistant. How can I help you? You can ask me about his career, skills, professional experience, or education.",
+      "contact": "You can reach Lounes via LinkedIn (linkedin.com/in/lounes-badji-01b550104) or GitHub (github.com/badjilounes). Feel free to contact him directly to discuss opportunities.",
+      "strength": "Lounes's key strengths: full stack technical expertise, team leadership, mastery of DDD/CQRS architectures, ability to challenge practices to improve quality, and solid experience at prestigious companies like Louis Vuitton.",
+      "availability": "Lounes is currently working at Tessi as Lead Front-End Developer. To discuss opportunities, feel free to reach out via LinkedIn.",
+      "methodology": "Lounes practices agile methodologies (Scrum, Kanban) and is a strong advocate for DDD (Domain-Driven Design) and CQRS. He emphasizes code quality, code reviews, and test-driven development.",
+      "frontend": "On the front-end, Lounes masters React, Next.js, Angular, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Redux, and RxJS. He has particular expertise in React and its ecosystems.",
+      "backend": "On the back-end, Lounes works with Node.js, Java, NestJS, Express, REST API, and GraphQL. He has solid experience in API development and microservices architecture.",
+      "saas": "Lounes has deep expertise in SaaS development. He contributed to SaaS platforms at Agicap (cash management) and GLOBAZ SA (social insurance).",
+      "leadership": "Lounes has held several leadership positions: Lead Front-End Developer at Tessi, Lead Software Engineer at MyGladys, and Lead Front Developer at Ubilab.io. He excels at mentoring and upskilling teams.",
+      "globaz": "At GLOBAZ SA (Nov 2022 - Apr 2023), Lounes developed SaaS software solutions for the social insurance sector in Switzerland.",
+      "mygladys": "At MyGladys (Dec 2018 - Jun 2019), Lounes led the development of the digital concierge platform as Lead Software Engineer.",
+      "ubilab": "At Ubilab.io (Sep 2016 - Dec 2018), Lounes led front-end development and implemented modern React architectures as Lead Front Developer.",
+      "trainme": "At TrainMe (Feb 2016 - Jul 2016), Lounes developed mobile applications for the sports coaching platform."
     }
   },
   "footer": {

@@ -15,19 +15,11 @@ const categoryIcons: Record<string, string> = {
   soft: '🤝',
 };
 
-const categoryGradients: Record<string, string> = {
-  frontend: 'from-violet-500/20 to-purple-600/20',
-  backend: 'from-cyan-500/20 to-blue-600/20',
-  architecture: 'from-amber-500/20 to-orange-600/20',
-  tools: 'from-emerald-500/20 to-green-600/20',
-  soft: 'from-rose-500/20 to-pink-600/20',
-};
-
 export default function Skills() {
   const t = useTranslations('skills');
 
   return (
-    <ParallaxSection id="skills" speed={0.2}>
+    <ParallaxSection id="skills" speed={0.4}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 gradient-text">
           {t('title')}
@@ -37,12 +29,12 @@ export default function Skills() {
           {categoryKeys.map((key, index) => (
             <GlassCard
               key={key}
-              className={`bg-gradient-to-br ${categoryGradients[key]} relative overflow-hidden`}
+              className="relative overflow-hidden"
               delay={index * 0.1}
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">{categoryIcons[key]}</span>
-                <h3 className="text-lg font-bold text-white">
+                <h3 className="text-lg font-bold" style={{ color: 'var(--text-primary)' }}>
                   {t(`categories.${key}`)}
                 </h3>
               </div>
@@ -52,8 +44,13 @@ export default function Skills() {
                   .map((skill: string) => (
                     <motion.span
                       key={skill}
-                      whileHover={{ scale: 1.1 }}
-                      className="px-3 py-1 rounded-full text-xs font-medium bg-white/10 text-gray-200 border border-white/10 hover:border-violet-400/30 transition-colors cursor-default"
+                      whileHover={{ scale: 1.08 }}
+                      className="px-3 py-1.5 rounded-lg text-xs font-medium cursor-default transition-colors"
+                      style={{
+                        background: 'var(--glass-bg)',
+                        color: 'var(--text-secondary)',
+                        border: '1px solid var(--glass-border)',
+                      }}
                     >
                       {skill}
                     </motion.span>

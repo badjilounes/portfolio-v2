@@ -20,7 +20,7 @@ export default function GlassCard({
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.5, delay, ease: 'easeOut' }}
+      transition={{ duration: 0.6, delay, ease: [0.4, 0, 0.2, 1] }}
       className={`glass ${hover ? 'glass-hover' : ''} p-6 ${className}`}
     >
       {children}

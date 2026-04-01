@@ -14,7 +14,7 @@ export default function ParallaxSection({
   children,
   id,
   className = '',
-  speed = 0.3,
+  speed = 0.5,
 }: ParallaxSectionProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -22,12 +22,13 @@ export default function ParallaxSection({
     offset: ['start end', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100 * speed, -100 * speed]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [150 * speed, -150 * speed]);
+  const opacity = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0, 1, 1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0.95, 1, 1, 0.95]);
 
   return (
-    <section id={id} ref={ref} className={`relative py-20 md:py-32 ${className}`}>
-      <motion.div style={{ y, opacity }}>
+    <section id={id} ref={ref} className={`relative py-24 md:py-36 ${className}`}>
+      <motion.div style={{ y, opacity, scale }}>
         {children}
       </motion.div>
     </section>

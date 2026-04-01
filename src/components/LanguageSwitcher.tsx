@@ -44,7 +44,8 @@ export default function LanguageSwitcher() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg glass text-sm font-medium text-gray-300 hover:text-white transition-all cursor-pointer"
+        className="flex items-center gap-2 px-3 py-2 rounded-xl glass text-sm font-medium transition-all cursor-pointer"
+        style={{ color: 'var(--text-secondary)' }}
       >
         <span>{current.flag}</span>
         <span>{current.label}</span>
@@ -66,9 +67,13 @@ export default function LanguageSwitcher() {
               <button
                 key={l.code}
                 onClick={() => switchLocale(l.code)}
-                className={`w-full flex items-center gap-2 px-4 py-2 text-sm transition-all hover:bg-white/10 cursor-pointer ${
-                  l.code === locale ? 'text-violet-400 font-semibold' : 'text-gray-300'
-                }`}
+                className="w-full flex items-center gap-2 px-4 py-2 text-sm transition-all cursor-pointer"
+                style={{
+                  color: l.code === locale ? 'var(--accent-light)' : 'var(--text-secondary)',
+                  fontWeight: l.code === locale ? 600 : 400,
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--glass-bg-hover)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
               >
                 <span>{l.flag}</span>
                 <span>{l.label}</span>

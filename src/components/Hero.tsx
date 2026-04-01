@@ -12,25 +12,29 @@ export default function Hero() {
     offset: ['start start', 'end start'],
   });
 
-  const textY = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
+  const textY = useTransform(scrollYProgress, [0, 1], [0, 350]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.4], [1, 0.85]);
+  const gridY = useTransform(scrollYProgress, [0, 1], [0, 150]);
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated grid background */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Animated grid background with parallax */}
+      <motion.div className="absolute inset-0 opacity-[0.04]" style={{ y: gridY }}>
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)
+              linear-gradient(var(--accent) 1px, transparent 1px),
+              linear-gradient(90deg, var(--accent) 1px, transparent 1px)
             `,
-            backgroundSize: '60px 60px',
+            backgroundSize: '80px 80px',
           }}
         />
-      </div>
+      </motion.div>
+
+      {/* Radial gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--bg-primary)_70%)]" />
 
       <motion.div
         style={{ y: textY, opacity: textOpacity, scale }}
@@ -40,7 +44,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-violet-400 font-medium mb-4"
+          className="text-lg md:text-xl font-medium mb-4"
+          style={{ color: 'var(--accent-light)' }}
         >
           {t('greeting')}
         </motion.p>
@@ -58,7 +63,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl md:text-2xl lg:text-3xl font-light text-gray-300 mb-8"
+          className="text-xl md:text-2xl lg:text-3xl font-light mb-8"
+          style={{ color: 'var(--text-secondary)' }}
         >
           {t('title')}
         </motion.h2>
@@ -67,7 +73,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-12"
+          className="text-base md:text-lg max-w-2xl mx-auto mb-12"
+          style={{ color: 'var(--text-muted)' }}
         >
           {t('subtitle')}
         </motion.p>
@@ -79,10 +86,10 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="btn-glass cursor-pointer"
+            className="btn-primary cursor-pointer text-base"
           >
             {t('cta')}
           </motion.button>
@@ -93,14 +100,18 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute -bottom-16 left-1/2 -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 rounded-full border-2 border-violet-400/50 flex items-start justify-center p-1.5"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-6 h-10 rounded-full flex items-start justify-center p-1.5"
+            style={{ border: '2px solid var(--accent-glow)' }}
           >
-            <motion.div className="w-1.5 h-1.5 rounded-full bg-violet-400" />
+            <motion.div
+              className="w-1.5 h-1.5 rounded-full"
+              style={{ background: 'var(--accent-light)' }}
+            />
           </motion.div>
         </motion.div>
       </motion.div>

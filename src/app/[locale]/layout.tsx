@@ -20,10 +20,14 @@ export default async function LocaleLayout({
   const isRTL = locale === 'ar';
 
   return (
-    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} data-theme="dark">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <div className="relative min-h-screen">
+            <div className="bg-noise" />
             <div className="bg-orb bg-orb-1" />
             <div className="bg-orb bg-orb-2" />
             <div className="bg-orb bg-orb-3" />

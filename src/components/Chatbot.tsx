@@ -10,16 +10,121 @@ interface Message {
 }
 
 const KEYWORD_MAP: Record<string, string[]> = {
-  experience: ['experience', 'expérience', 'experiencia', 'erfahrung', 'خبرة', 'опыт', 'travail', 'work', 'trabajo', 'arbeit', 'عمل', 'работа', 'career', 'carrière', 'carrera', 'karriere', 'مسيرة', 'карьера', 'parcours', 'journey', 'trayectoria', 'werdegang', 'مسار', 'путь'],
-  skills: ['skill', 'compétence', 'habilidad', 'fähigkeit', 'مهارة', 'навык', 'tech', 'technologie', 'tecnología', 'technologie', 'تقنية', 'технология', 'stack', 'react', 'typescript', 'node', 'java', 'angular', 'next'],
-  education: ['education', 'formation', 'formación', 'ausbildung', 'تعليم', 'образование', 'école', 'school', 'escuela', 'schule', 'مدرسة', 'школа', 'diplôme', 'degree', 'título', 'abschluss', 'شهادة', 'диплом', 'cpe', 'lyon', 'ingénieur', 'engineer'],
-  location: ['location', 'lieu', 'ubicación', 'standort', 'موقع', 'местоположение', 'where', 'où', 'dónde', 'wo', 'أين', 'где', 'lyon', 'france'],
-  lv: ['vuitton', 'louis', 'lv', 'luxe', 'luxury', 'lujo'],
-  agicap: ['agicap', 'trésorerie', 'cash', 'treasury'],
-  current: ['current', 'actuel', 'actual', 'aktuell', 'حالي', 'текущий', 'now', 'maintenant', 'ahora', 'jetzt', 'الآن', 'сейчас', 'tessi', 'today', "aujourd'hui"],
-  github: ['github', 'git', 'repo', 'repository', 'projet', 'project', 'proyecto', 'projekt', 'مشروع', 'проект'],
-  languages: ['language', 'langage', 'lenguaje', 'sprache', 'لغة', 'язык', 'programming', 'programmation', 'programación', 'programmierung', 'برمجة', 'программирование'],
-  teaching: ['teach', 'enseign', 'profesor', 'dozent', 'مدرس', 'преподаватель', 'icoges', 'teacher', 'enseignant'],
+  hello: [
+    'hello', 'hi', 'hey', 'bonjour', 'salut', 'coucou', 'bonsoir',
+    'hola', 'buenos', 'hallo', 'guten',
+    'مرحبا', 'سلام', 'أهلا',
+    'привет', 'здравствуйте', 'добрый',
+  ],
+  contact: [
+    'contact', 'contacter', 'contactar', 'kontakt',
+    'اتصل', 'تواصل', 'связ', 'контакт',
+    'email', 'mail', 'reach', 'joindre', 'phone', 'telephone',
+    'hire', 'embaucher', 'recruter', 'recrutement', 'recruiting',
+  ],
+  strength: [
+    'strength', 'force', 'fortaleza', 'stärke',
+    'قوة', 'نقاط', 'сила', 'сильн',
+    'point fort', 'atout', 'advantage', 'avantage', 'quality', 'qualité',
+    'why', 'pourquoi', 'warum', 'por qué', 'لماذا', 'почему',
+  ],
+  availability: [
+    'available', 'disponible', 'disponible', 'verfügbar',
+    'متاح', 'доступ',
+    'dispo', 'availability', 'disponibilité', 'freelance', 'open to',
+  ],
+  methodology: [
+    'method', 'méthode', 'método', 'methode',
+    'منهج', 'метод',
+    'agile', 'scrum', 'kanban', 'tdd', 'test', 'process', 'processus',
+    'ddd', 'cqrs', 'domain', 'driven', 'clean',
+  ],
+  frontend: [
+    'frontend', 'front-end', 'front end',
+    'الواجهة الأمامية', 'фронтенд',
+    'css', 'html', 'tailwind', 'redux', 'rxjs', 'ui', 'interface',
+  ],
+  backend: [
+    'backend', 'back-end', 'back end',
+    'الواجهة الخلفية', 'бэкенд', 'бекенд',
+    'server', 'serveur', 'api', 'graphql', 'nestjs', 'express', 'rest',
+  ],
+  saas: [
+    'saas', 'software as a service', 'cloud', 'platform',
+    'plateforme', 'plataforma', 'plattform',
+    'منصة', 'платформ',
+  ],
+  leadership: [
+    'lead', 'leader', 'leadership', 'manage', 'management',
+    'chef', 'direction', 'diriger', 'dirigir', 'leitung',
+    'قيادة', 'قائد', 'лидер', 'руковод',
+    'mentor', 'mentorat', 'team', 'équipe', 'equipo',
+  ],
+  experience: [
+    'experience', 'expérience', 'experiencia', 'erfahrung',
+    'خبرة', 'опыт',
+    'travail', 'work', 'trabajo', 'arbeit', 'عمل', 'работа',
+    'career', 'carrière', 'carrera', 'karriere', 'مسيرة', 'карьера',
+    'parcours', 'journey', 'trayectoria', 'werdegang', 'مسار', 'путь',
+    'year', 'année', 'año', 'jahr', 'سنة', 'год', 'ans',
+  ],
+  skills: [
+    'skill', 'compétence', 'habilidad', 'fähigkeit',
+    'مهارة', 'навык',
+    'tech', 'technologie', 'tecnología',
+    'تقنية', 'технология',
+    'stack', 'react', 'typescript', 'node', 'java', 'angular', 'next',
+  ],
+  education: [
+    'education', 'formation', 'formación', 'ausbildung',
+    'تعليم', 'образование',
+    'école', 'school', 'escuela', 'schule', 'مدرسة', 'школа',
+    'diplôme', 'degree', 'título', 'abschluss', 'شهادة', 'диплом',
+    'cpe', 'ingénieur', 'engineer', 'university', 'université',
+    'chartreux', 'saint just', 'bac',
+  ],
+  location: [
+    'location', 'lieu', 'ubicación', 'standort',
+    'موقع', 'местоположение',
+    'where', 'où', 'dónde', 'wo', 'أين', 'где',
+    'lyon', 'france', 'ville', 'city',
+  ],
+  lv: [
+    'vuitton', 'louis vuitton', 'lv', 'lvmh',
+    'luxe', 'luxury', 'lujo', 'luxus', 'فخامة', 'люкс',
+  ],
+  agicap: [
+    'agicap', 'trésorerie', 'cash', 'treasury',
+    'tresoreria', 'خزينة', 'казначейство',
+  ],
+  current: [
+    'current', 'actuel', 'actual', 'aktuell',
+    'حالي', 'текущий',
+    'now', 'maintenant', 'ahora', 'jetzt', 'الآن', 'сейчас',
+    'tessi', 'today', "aujourd'hui", 'presente',
+  ],
+  github: [
+    'github', 'git', 'repo', 'repository',
+    'projet', 'project', 'proyecto', 'projekt',
+    'مشروع', 'проект',
+    'code', 'source', 'open source',
+  ],
+  languages: [
+    'language', 'langage', 'lenguaje', 'sprache',
+    'لغة', 'язык',
+    'programming', 'programmation', 'programación', 'programmierung',
+    'برمجة', 'программирование',
+  ],
+  teaching: [
+    'teach', 'enseign', 'profesor', 'dozent',
+    'مدرس', 'преподаватель',
+    'icoges', 'teacher', 'enseignant', 'formateur', 'prof',
+    'cours', 'course',
+  ],
+  globaz: ['globaz', 'suisse', 'switzerland', 'schweiz', 'سويسرا', 'швейцария', 'assurance', 'insurance'],
+  mygladys: ['mygladys', 'gladys', 'conciergerie', 'concierge'],
+  ubilab: ['ubilab'],
+  trainme: ['trainme', 'mobile', 'coaching', 'sport'],
 };
 
 export default function Chatbot() {
@@ -44,13 +149,30 @@ export default function Chatbot() {
   const findResponse = (query: string): string => {
     const lower = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+    // Score each category by number of keyword matches
+    const scores: Record<string, number> = {};
     for (const [key, keywords] of Object.entries(KEYWORD_MAP)) {
+      scores[key] = 0;
       for (const keyword of keywords) {
         const normalizedKeyword = keyword.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         if (lower.includes(normalizedKeyword)) {
-          return t(`responses.${key}`);
+          scores[key] += normalizedKeyword.length; // Longer matches score higher
         }
       }
+    }
+
+    // Find the best match
+    let bestKey = '';
+    let bestScore = 0;
+    for (const [key, score] of Object.entries(scores)) {
+      if (score > bestScore) {
+        bestScore = score;
+        bestKey = key;
+      }
+    }
+
+    if (bestScore > 0) {
+      return t(`responses.${bestKey}`);
     }
 
     return t('fallback');
@@ -68,7 +190,7 @@ export default function Chatbot() {
       const response = findResponse(userMessage);
       setMessages((prev) => [...prev, { text: response, isBot: true }]);
       setIsTyping(false);
-    }, 600 + Math.random() * 800);
+    }, 500 + Math.random() * 700);
   };
 
   return (
@@ -81,7 +203,11 @@ export default function Chatbot() {
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-violet-600 to-cyan-600 text-white shadow-lg shadow-violet-500/30 flex items-center justify-center cursor-pointer"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl text-white flex items-center justify-center cursor-pointer"
+        style={{
+          background: 'linear-gradient(135deg, var(--accent), var(--secondary))',
+          boxShadow: '0 4px 20px var(--accent-glow)',
+        }}
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
@@ -126,16 +252,19 @@ export default function Chatbot() {
             style={{ maxHeight: 'min(500px, 70vh)' }}
           >
             {/* Header */}
-            <div className="p-4 border-b border-white/10 bg-gradient-to-r from-violet-500/10 to-cyan-500/10">
+            <div className="p-4" style={{ borderBottom: '1px solid var(--glass-border)', background: 'var(--glass-bg)' }}>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center text-white text-sm font-bold">
+                <div
+                  className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold"
+                  style={{ background: 'linear-gradient(135deg, var(--accent), var(--secondary))' }}
+                >
                   LB
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-white">{t('title')}</h3>
-                  <div className="flex items-center gap-1">
+                  <h3 className="text-sm font-bold" style={{ color: 'var(--text-primary)' }}>{t('title')}</h3>
+                  <div className="flex items-center gap-1.5">
                     <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <span className="text-xs text-gray-400">Online</span>
+                    <span className="text-xs" style={{ color: 'var(--text-muted)' }}>Online</span>
                   </div>
                 </div>
               </div>
@@ -153,10 +282,12 @@ export default function Chatbot() {
                 >
                   <div
                     className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
-                      msg.isBot
-                        ? 'bg-white/5 text-gray-200 rounded-tl-sm'
-                        : 'bg-violet-600/30 text-violet-100 rounded-tr-sm'
+                      msg.isBot ? 'rounded-tl-sm' : 'rounded-tr-sm'
                     }`}
+                    style={msg.isBot
+                      ? { background: 'var(--glass-bg)', color: 'var(--text-secondary)', border: '1px solid var(--glass-border)' }
+                      : { background: 'var(--accent)', color: 'white' }
+                    }
                   >
                     {msg.text}
                   </div>
@@ -168,10 +299,10 @@ export default function Chatbot() {
                   animate={{ opacity: 1 }}
                   className="flex justify-start"
                 >
-                  <div className="bg-white/5 px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '0ms' }} />
-                    <span className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '150ms' }} />
-                    <span className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '300ms' }} />
+                  <div className="px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1.5" style={{ background: 'var(--glass-bg)', border: '1px solid var(--glass-border)' }}>
+                    <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '0ms' }} />
+                    <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '150ms' }} />
+                    <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '300ms' }} />
                   </div>
                 </motion.div>
               )}
@@ -179,7 +310,7 @@ export default function Chatbot() {
             </div>
 
             {/* Input */}
-            <div className="p-3 border-t border-white/10">
+            <div className="p-3" style={{ borderTop: '1px solid var(--glass-border)' }}>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -193,14 +324,20 @@ export default function Chatbot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder={t('placeholder')}
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-violet-500/50 transition-colors"
+                  className="flex-1 rounded-xl px-4 py-2.5 text-sm focus:outline-none transition-colors"
+                  style={{
+                    background: 'var(--glass-bg)',
+                    border: '1px solid var(--glass-border)',
+                    color: 'var(--text-primary)',
+                  }}
                 />
                 <motion.button
                   type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   disabled={!input.trim()}
-                  className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white text-sm font-medium disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed transition-opacity"
+                  className="px-4 py-2.5 rounded-xl text-white text-sm font-medium disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed transition-opacity"
+                  style={{ background: 'linear-gradient(135deg, var(--accent), var(--secondary))' }}
                 >
                   {t('send')}
                 </motion.button>
