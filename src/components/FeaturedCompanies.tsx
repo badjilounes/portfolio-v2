@@ -2,30 +2,43 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import ParallaxSection from './ParallaxSection';
 import GlassCard from './GlassCard';
 
 const featured = [
   {
     key: 'lv',
-    logo: 'LV',
+    logo: '/logos/louis-vuitton.svg',
+    name: 'Louis Vuitton',
     gradient: 'from-amber-500 to-yellow-600',
     glow: 'rgba(245, 158, 11, 0.15)',
     border: 'border-amber-500/20',
+    logoColor: '#a67c00',
+    logoBg: 'rgba(245, 158, 11, 0.1)',
+    logoSize: 36,
   },
   {
     key: 'tessi',
-    logo: 'T',
+    logo: '/logos/tessi.svg',
+    name: 'Tessi',
     gradient: 'from-indigo-500 to-violet-600',
     glow: 'rgba(99, 102, 241, 0.15)',
     border: 'border-indigo-500/20',
+    logoColor: '#6366f1',
+    logoBg: 'rgba(99, 102, 241, 0.1)',
+    logoSize: 50,
   },
   {
     key: 'agicap',
-    logo: 'A',
+    logo: '/logos/agicap.svg',
+    name: 'Agicap',
     gradient: 'from-emerald-500 to-teal-600',
     glow: 'rgba(16, 185, 129, 0.15)',
     border: 'border-emerald-500/20',
+    logoColor: '#10b981',
+    logoBg: 'rgba(16, 185, 129, 0.1)',
+    logoSize: 36,
   },
 ] as const;
 
@@ -59,9 +72,19 @@ export default function FeaturedCompanies() {
               />
 
               <div className="relative">
-                {/* Logo */}
-                <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${company.gradient} flex items-center justify-center text-white font-bold text-xl mb-5 shadow-lg`}>
-                  {company.logo}
+                {/* Company Logo */}
+                <div
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 shadow-lg"
+                  style={{ background: company.logoBg, border: `1px solid ${company.logoColor}30` }}
+                >
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    width={company.logoSize}
+                    height={company.logoSize}
+                    className="object-contain"
+                    style={{ color: company.logoColor, filter: `drop-shadow(0 0 1px ${company.logoColor})` }}
+                  />
                 </div>
 
                 <h3 className="text-xl font-bold mb-1" style={{ color: 'var(--text-primary)' }}>
