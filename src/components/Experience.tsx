@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import ParallaxSection from './ParallaxSection';
 import GlassCard from './GlassCard';
 
-const roleKeys = ['tessi', 'globaz', 'agicap', 'lv', 'mygladys', 'icoges', 'ubilab', 'trainme'] as const;
+const roleKeys = ['tessi1', 'tessi2', 'globaz', 'agicap', 'lv', 'mygladys', 'icoges', 'ubilab', 'trainme'] as const;
 
-const featuredKeys = new Set(['tessi', 'agicap', 'lv']);
+const featuredKeys = new Set(['tessi1', 'agicap', 'lv']);
 
 export default function Experience() {
   const t = useTranslations('experience');

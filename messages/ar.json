@@ -9,14 +9,14 @@
   "hero": {
     "greeting": "مرحبًا، أنا",
     "name": "لونيس باجي",
-    "title": "مطور واجهات أمامية رئيسي ومهندس Full Stack",
-    "subtitle": "شغوف بتطوير البرمجيات مع خبرة عميقة في SaaS وDDD/CQRS والهندسة المعمارية الحديثة.",
+    "title": "Software Engineer",
+    "subtitle": "مهندس برمجيات ديناميكي يتمتع بأكثر من 8 سنوات من الخبرة في تصميم وتطوير ونشر تطبيقات ويب عالية الأداء في مجالات التجارة الإلكترونية والخدمات المالية. خبير في JavaScript وTypeScript وAngular وNode.js والأطر الحديثة.",
     "cta": "اكتشف مسيرتي",
     "download": "تحميل سيرتي الذاتية"
   },
   "about": {
     "title": "نبذة عني",
-    "description": "خريج هندسة من CPE Lyon، أنا مطور Full Stack شغوف بأكثر من 8 سنوات من الخبرة في تصميم وتطوير حلول برمجية مبتكرة. عملت لدى شركات مرموقة مثل Louis Vuitton وAgicap وTessi، حيث قدمت خبرتي في الهندسة المعمارية الحديثة وتطوير SaaS.",
+    "description": "مهندس متخرج من CPE Lyon في الأنظمة المعلوماتية والشبكات والاتصالات، أنا Software Engineer بأكثر من 8 سنوات من الخبرة. متخصص في التطوير الشامل وتحسين بنى الأنظمة وتعزيز قابلية التوسع للتطبيقات. عملت لدى شركات مثل Louis Vuitton وAgicap وTessi.",
     "location": "مقيم في ليون، فرنسا",
     "experience_years": "+8 سنوات خبرة",
     "projects": "+60 مشروع على GitHub"
@@ -24,53 +24,59 @@
   "experience": {
     "title": "الخبرة المهنية",
     "roles": {
-      "tessi": {
+      "tessi1": {
         "company": "Tessi",
-        "role": "مطور واجهات أمامية رئيسي",
-        "period": "2023 - الحاضر",
-        "description": "القيادة التقنية لتطوير الواجهات الأمامية، تنفيذ بنيات قابلة للتوسع وتوجيه الفريق."
+        "role": "Software Engineer - Technical Lead Frontend",
+        "period": "فبراير 2024 - الحاضر",
+        "description": "قيادة وتوجيه فريق من 6 مطوري واجهات أمامية. إعداد مستودع NX الموحد، وسلسلة CD/CI مع تحليل الجودة، وStorybook، والتكامل التلقائي لعملاء API وأنماط Figma. توثيق البنية السداسية."
+      },
+      "tessi2": {
+        "company": "Tessi",
+        "role": "Software Engineer - Frontend Developer",
+        "period": "أغسطس 2023 - فبراير 2024",
+        "description": "تطوير حل SaaS لمراقبة العمليات التجارية في وقت التشغيل. إنشاء لوحات معلومات لعرض مؤشرات الأداء، ومحرك محاكاة، ومتتبع عمليات مع إجراءات تصحيح الأخطاء."
       },
       "globaz": {
         "company": "GLOBAZ SA",
-        "role": "مهندس برمجيات",
+        "role": "Software Engineer - Frontend Developer",
         "period": "نوفمبر 2022 - أبريل 2023",
-        "description": "تطوير حلول برمجيات SaaS لقطاع التأمينات الاجتماعية في سويسرا."
+        "description": "تطوير حل SaaS لصناديق التعويضات السويسرية. إعداد NX والتسليم المستمر، وإنشاء مكونات نظام التصميم، وتدريب الفرق على البرمجة الكائنية وهياكل البيانات."
       },
       "agicap": {
         "company": "Agicap",
-        "role": "مهندس برمجيات",
+        "role": "Software Engineer - Fullstack Developer",
         "period": "نوفمبر 2021 - أغسطس 2022",
-        "description": "تطوير Full Stack لمنصة إدارة الخزينة. تطبيق أنماط DDD/CQRS وتحسين تماسك الفريق."
+        "description": "تطوير منتجين جديدين: إدارة التحصيل والفوترة. إعداد اختبارات E2E باستخدام Cucumber وPlaywright، وDDD/TDD مع البنية السداسية. اختيار وترحيل ORM."
       },
       "lv": {
         "company": "Louis Vuitton",
-        "role": "مهندس برمجيات",
+        "role": "Software Engineer - Head of Production",
         "period": "نوفمبر 2019 - نوفمبر 2021",
-        "description": "تطوير حلول رقمية لدار الأزياء الفاخرة مع التركيز على الجودة والتميز التقني."
+        "description": "مسؤول عن إنتاج الواجهة الخلفية للتطبيق المحمول. تقليص وقت النشر بنسبة 75% عبر نموذج تفريع جديد. إعداد بوابات جودة CD/CI، وواجهة إدارية، ووكيل للهاتف المحمول، ونظام تخزين مؤقت داخلي."
       },
       "mygladys": {
         "company": "MyGladys",
-        "role": "مهندس برمجيات رئيسي",
-        "period": "ديسمبر 2018 - يونيو 2019",
-        "description": "القيادة التقنية وتطوير منصة الكونسيرج الرقمية."
+        "role": "Software Engineer - Technical Lead Fullstack",
+        "period": "ديسمبر 2018 - نوفمبر 2019",
+        "description": "منصة SaaS لحجز المواعيد المهنية. إنشاء متتبع بيانات المستخدم، وقيادة التواصل مع API بالبرمجة الكائنية، وتطوير تقويم العملاء ونظام التوفر."
       },
       "icoges": {
         "company": "ICOGES",
-        "role": "مدرّس",
+        "role": "مدرّس - نظم المعلومات والتنظيم",
         "period": "فبراير 2018 - فبراير 2019",
-        "description": "تدريس تطوير الويب والتقنيات الحديثة للطلاب."
+        "description": "مدرسة خاصة للتعليم العالي. إعداد محتوى لشهادة BTS وفقًا للمتطلبات الأكاديمية. تعلم تطوير التطبيقات الهجينة باستخدام Ionic وNestJS."
       },
       "ubilab": {
-        "company": "Ubilab.io",
-        "role": "مطور واجهات أمامية رئيسي",
+        "company": "Ubilab",
+        "role": "Software Engineer - Technical Lead Frontend",
         "period": "سبتمبر 2016 - ديسمبر 2018",
-        "description": "قيادة تطوير الواجهات الأمامية وتنفيذ بنيات React الحديثة."
+        "description": "منصة SaaS لرقمنة المختبرات والعيادات والمستشفيات. تقدير المهام، والنمذجة الأولية للمنتج، وتطوير التعليم الإلكتروني من الصفر، وإعداد سلسلة CD/CI باستخدام GitHub وJenkins."
       },
       "trainme": {
         "company": "TrainMe",
-        "role": "مهندس برمجيات موبايل",
+        "role": "Software Engineer - تدريب تطبيقات الهاتف المحمول",
         "period": "فبراير 2016 - يوليو 2016",
-        "description": "تطوير تطبيقات الهاتف المحمول لمنصة التدريب الرياضي."
+        "description": "منصة SaaS لرقمنة الرياضة. تطوير تطبيق هاتف هجين باستخدام Ionic، ومراسلة فورية مع مصادقة اجتماعية، وتكامل التقويم لمحترفي الرياضة."
       }
     }
   },
@@ -80,59 +86,55 @@
       "cpe": {
         "school": "CPE Lyon",
         "degree": "شهادة مهندس",
-        "field": "علوم الحاسوب والإلكترونيات",
+        "field": "الأنظمة المعلوماتية والشبكات والاتصالات",
+        "period": "سبتمبر 2013 - أغسطس 2016",
         "description": "المدرسة العليا للكيمياء والفيزياء والإلكترونيات في ليون"
       },
       "chartreux": {
-        "school": "Institution des Chartreux",
-        "degree": "أقسام تحضيرية",
-        "field": "أقسام تحضيرية مدمجة لـ CPE Lyon",
-        "description": "التحضير لدراسات الهندسة"
-      },
-      "saintjust": {
-        "school": "Lycée Saint Just",
-        "degree": "البكالوريا",
-        "field": "علمي",
-        "description": "شهادة البكالوريا العلمية"
+        "school": "Les Chartreux - Lyon",
+        "degree": "برنامج تحضيري للمدارس الكبرى",
+        "field": "الرياضيات",
+        "period": "سبتمبر 2011 - يوليو 2013",
+        "description": "أقسام تحضيرية مدمجة"
       }
     }
   },
   "skills": {
     "title": "المهارات",
     "categories": {
-      "frontend": "الواجهة الأمامية",
-      "backend": "الواجهة الخلفية",
-      "architecture": "الهندسة المعمارية",
+      "frontend": "Front-End",
+      "backend": "Back-End",
+      "architecture": "البنية والتصميم",
       "tools": "الأدوات و DevOps",
       "soft": "المهارات الشخصية"
     },
     "items": {
-      "frontend": "React, Next.js, Angular, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Redux, RxJS",
-      "backend": "Node.js, Java, NestJS, Express, REST API, GraphQL",
-      "architecture": "DDD, CQRS, Microservices, Clean Architecture, Design Patterns",
-      "tools": "Git, Docker, CI/CD, GitHub Actions, Jest, Cypress",
-      "soft": "القيادة التقنية، التوجيه، المنهجيات الرشيقة، التواصل، العمل الجماعي"
+      "frontend": "TypeScript, JavaScript, Angular, React, Next.js, HTML5, CSS3, Tailwind CSS, Storybook, Ionic",
+      "backend": "Node.js, NestJS, Java, Express, REST API, GraphQL",
+      "architecture": "DDD, TDD, CQRS, Architecture Hexagonale, Microservices, Clean Architecture, Software Design, Nx",
+      "tools": "Git, GitHub Actions, Jenkins, Docker, CI/CD, Cucumber, Playwright, Jest, Cypress, Figma",
+      "soft": "القيادة التقنية، التوجيه، المنهجيات الرشيقة، التواصل، روح الفريق"
     }
   },
   "featured": {
     "title": "وثقوا بي",
     "lv": {
       "company": "Louis Vuitton",
-      "role": "مهندس برمجيات",
+      "role": "Software Engineer - Head of Production",
       "period": "نوفمبر 2019 - نوفمبر 2021",
-      "description": "تطوير حلول رقمية لدار الأزياء الفرنسية الفاخرة. تصميم بنيات واجهة أمامية عالية الأداء وسهلة الصيانة للأدوات الداخلية وتجارب العملاء."
+      "description": "مسؤول عن إنتاج الواجهة الخلفية للتطبيق المحمول. تقليص وقت النشر بنسبة 75%، وإعداد بوابات الجودة، وإنشاء واجهة إدارية موجهة بالمكونات، ونظام تخزين مؤقت داخلي."
     },
     "tessi": {
       "company": "Tessi",
-      "role": "مطور واجهات أمامية رئيسي",
-      "period": "2023 - الحاضر",
-      "description": "القيادة التقنية لتطوير الواجهات الأمامية. تنفيذ بنيات قابلة للتوسع، مراجعات منهجية للكود وتوجيه فريق من المطورين."
+      "role": "Software Engineer - Technical Lead Frontend",
+      "period": "فبراير 2024 - الحاضر",
+      "description": "قيادة فريق من 6 مطوري واجهات أمامية. مستودع NX الموحد، والبنية السداسية، وStorybook، وأتمتة تكامل API وأنماط Figma."
     },
     "agicap": {
       "company": "Agicap",
-      "role": "مهندس برمجيات",
+      "role": "Software Engineer - Fullstack Developer",
       "period": "نوفمبر 2021 - أغسطس 2022",
-      "description": "تطوير Full Stack لمنصة إدارة الخزينة. تطبيق أنماط DDD/CQRS لبنية قوية وقابلة للتوسع."
+      "description": "تطوير منتجين جديدين. DDD/TDD مع البنية السداسية، واختبارات E2E باستخدام Cucumber وPlaywright، واختيار وترحيل ORM."
     }
   },
   "theme": {
@@ -141,7 +143,7 @@
     "light": "فاتح"
   },
   "contact": {
-    "title": "اتصل بي",
+    "title": "تواصل معي",
     "subtitle": "مهتم بملفي الشخصي؟ لا تتردد في التواصل معي!",
     "github": "GitHub",
     "linkedin": "LinkedIn",
@@ -149,34 +151,35 @@
   },
   "chatbot": {
     "title": "مساعد السيرة الذاتية",
-    "placeholder": "اطرح سؤالاً عن سيرتي الذاتية...",
+    "placeholder": "اطرح سؤالًا عن سيرتي الذاتية...",
     "send": "إرسال",
     "greeting": "مرحبًا! أنا مساعد لونيس. اسألني عن مسيرته أو مهاراته أو خبرته!",
     "fallback": "لست متأكدًا من فهم سؤالك. يمكنني إخبارك عن: المسيرة المهنية، المهارات التقنية، التعليم، الشركات (Louis Vuitton، Tessi، Agicap...)، المنهجيات، القيادة، أو كيفية التواصل مع لونيس.",
     "responses": {
-      "experience": "لدى لونيس أكثر من 8 سنوات من الخبرة. وهو حاليًا مطور واجهات أمامية رئيسي في Tessi. سبق له العمل في GLOBAZ SA وAgicap وLouis Vuitton وMyGladys وICOGES (كمدرّس) وUbilab.io وTrainMe.",
-      "skills": "يتقن لونيس React وNext.js وAngular وTypeScript وNode.js وJava وNestJS. وهو خبير في بنيات DDD/CQRS والخدمات المصغرة وClean Architecture. كما يمارس Docker وCI/CD والمنهجيات الرشيقة.",
-      "education": "حصل لونيس على شهادة مهندس من CPE Lyon (المدرسة العليا للكيمياء والفيزياء والإلكترونيات في ليون). أكمل أقسامه التحضيرية في Institution des Chartreux وبكالوريته في Lycée Saint Just.",
-      "location": "لونيس مقيم في منطقة ليون، فرنسا.",
-      "lv": "في Louis Vuitton (نوفمبر 2019 - نوفمبر 2021)، طوّر لونيس حلولاً رقمية لدار الأزياء الفاخرة مع التركيز على الجودة والتميز التقني.",
-      "agicap": "في Agicap (نوفمبر 2021 - أغسطس 2022)، عمل لونيس كمطور Full Stack على منصة إدارة الخزينة وطبّق أنماط DDD/CQRS.",
-      "current": "حاليًا، لونيس هو مطور واجهات أمامية رئيسي في Tessi حيث يقود تطوير الواجهات الأمامية وينفذ بنيات قابلة للتوسع.",
-      "github": "لدى لونيس أكثر من +60 مستودع على GitHub. ملفه الشخصي هو github.com/badjilounes.",
-      "languages": "يعمل لونيس بشكل أساسي مع TypeScript وJavaScript وJava.",
-      "teaching": "كان لونيس مدرّسًا في ICOGES (فبراير 2018 - فبراير 2019)، حيث درّس تطوير الويب والتقنيات الحديثة.",
-      "hello": "مرحبًا! أنا المساعد الافتراضي للونيس. كيف يمكنني مساعدتك؟ يمكنك سؤالي عن مسيرته المهنية، مهاراته، خبراته المهنية أو تعليمه.",
-      "contact": "يمكنك التواصل مع لونيس عبر LinkedIn (linkedin.com/in/lounes-badji-01b550104) أو عبر GitHub (github.com/badjilounes). لا تتردد في الاتصال به مباشرة لمناقشة الفرص.",
-      "strength": "نقاط قوة لونيس: خبرة تقنية Full Stack، قيادة الفريق، إتقان بنيات DDD/CQRS، القدرة على تحسين الممارسات لرفع الجودة، وخبرة قوية في شركات مرموقة مثل Louis Vuitton.",
-      "availability": "لونيس حاليًا في منصبه كمطور واجهات أمامية رئيسي في Tessi. لمناقشة الفرص، لا تتردد في التواصل معه عبر LinkedIn.",
-      "methodology": "يمارس لونيس المنهجيات الرشيقة (Scrum، Kanban) وهو مدافع قوي عن DDD (التصميم الموجه بالمجال) وCQRS. يركز على جودة الكود، مراجعات الكود والتطوير القائم على الاختبارات.",
-      "frontend": "في الواجهة الأمامية، يتقن لونيس React وNext.js وAngular وTypeScript وJavaScript وHTML5 وCSS3 وTailwind CSS وRedux وRxJS. لديه خبرة خاصة في React ومنظومته.",
-      "backend": "في الواجهة الخلفية، يعمل لونيس مع Node.js وJava وNestJS وExpress وREST API وGraphQL. لديه خبرة قوية في تطوير واجهات برمجة التطبيقات وبنية الخدمات المصغرة.",
-      "saas": "يمتلك لونيس خبرة عميقة في تطوير SaaS. ساهم في منصات SaaS في Agicap (إدارة الخزينة) وGLOBAZ SA (التأمينات الاجتماعية).",
-      "leadership": "شغل لونيس عدة مناصب قيادية: مطور واجهات أمامية رئيسي في Tessi، مهندس برمجيات رئيسي في MyGladys، ومطور واجهات أمامية رئيسي في Ubilab.io. يتفوق في التوجيه وتطوير مهارات الفرق.",
-      "globaz": "في GLOBAZ SA (نوفمبر 2022 - أبريل 2023)، طوّر لونيس حلول برمجيات SaaS لقطاع التأمينات الاجتماعية في سويسرا.",
-      "mygladys": "في MyGladys (ديسمبر 2018 - يونيو 2019)، قاد لونيس تطوير منصة الكونسيرج الرقمية كمهندس برمجيات رئيسي.",
-      "ubilab": "في Ubilab.io (سبتمبر 2016 - ديسمبر 2018)، قاد لونيس تطوير الواجهات الأمامية ونفّذ بنيات React الحديثة كمطور واجهات أمامية رئيسي.",
-      "trainme": "في TrainMe (فبراير 2016 - يوليو 2016)، طوّر لونيس تطبيقات الهاتف المحمول لمنصة التدريب الرياضي."
+      "experience": "يمتلك لونيس أكثر من 8 سنوات من الخبرة. يشغل حاليًا منصب Technical Lead Frontend في Tessi منذ فبراير 2024، حيث يقود فريقًا من 6 مطورين. قبل ذلك: Frontend Developer في Tessi، وGLOBAZ SA (سويسرا)، وFullstack في Agicap، وHead of Production في Louis Vuitton، وTechnical Lead في MyGladys وUbilab، ومدرّس في ICOGES، وتدريب على التطبيقات المحمولة في TrainMe.",
+      "skills": "يتقن لونيس TypeScript وAngular وReact وNext.js وNode.js وNestJS وJava. خبير في البنية السداسية وDDD وTDD وCQRS وNx. يستخدم Storybook وCucumber وPlaywright وJest وCypress وDocker وCI/CD وGitHub Actions وJenkins.",
+      "education": "لونيس حاصل على شهادة مهندس من CPE Lyon في الأنظمة المعلوماتية والشبكات والاتصالات (2013-2016). أتم الأقسام التحضيرية للمدارس الكبرى في الرياضيات في Les Chartreux بليون (2011-2013).",
+      "location": "لونيس مقيم في ليون، فرنسا.",
+      "lv": "في Louis Vuitton (نوفمبر 2019 - نوفمبر 2021)، كان لونيس Head of Production للواجهة الخلفية للتطبيق المحمول. قلّص وقت النشر بنسبة 75%، وأعدّ بوابات جودة CD/CI، وبنى واجهة إدارية موجهة بالمكونات، ووكيلًا لاستهلاك بيانات الهاتف المحمول، ونظام تخزين مؤقت داخلي.",
+      "agicap": "في Agicap (نوفمبر 2021 - أغسطس 2022)، طوّر لونيس منتجين جديدين (التحصيل والفوترة) كمطور Fullstack. أعدّ DDD/TDD مع البنية السداسية، واختبارات E2E باستخدام Cucumber وPlaywright، وقاد اختيار وترحيل ORM.",
+      "current": "حاليًا، لونيس هو Technical Lead Frontend في Tessi منذ فبراير 2024. يقود فريقًا من 6 مطورين، وأعدّ مستودع NX الموحد، والبنية السداسية، وStorybook، وأتمتة تكامل API وأنماط Figma.",
+      "github": "لدى لونيس أكثر من 60 مستودعًا على GitHub. ملفه الشخصي هو github.com/badjilounes.",
+      "languages": "يعمل لونيس بشكل أساسي مع TypeScript وAngular وNestJS وNx. يتحدث الفرنسية (لغة أم) والإنجليزية (شهادة B2).",
+      "teaching": "كان لونيس مدرّسًا في ICOGES (فبراير 2018 - فبراير 2019)، وهي مدرسة خاصة للتعليم العالي. أعدّ محتوى لشهادة BTS وتعلّم تطوير التطبيقات الهجينة باستخدام Ionic وNestJS.",
+      "hello": "مرحبًا! أنا المساعد الافتراضي للونيس باجي، Software Engineer بأكثر من 8 سنوات من الخبرة. كيف يمكنني مساعدتك؟",
+      "contact": "يمكنك التواصل مع لونيس عبر الهاتف على (+33) 6 16 51 53 27، أو البريد الإلكتروني lounesbadji@gmail.com، أو LinkedIn (linkedin.com/in/lounes-badji-01b550104) أو GitHub (github.com/badjilounes). لا تتردد في الاتصال به أو إرسال بريد إلكتروني!",
+      "cv": "يمكنك استعراض وتحميل السيرة الذاتية للونيس بصيغة PDF مباشرة من هذا الموقع. انقر على زر 'تحميل سيرتي الذاتية' أعلى الصفحة، أو الوصول إليها هنا: /Lounes BADJI.pdf. لأي استفسار، تواصل معه على (+33) 6 16 51 53 27 أو lounesbadji@gmail.com.",
+      "strength": "نقاط قوة لونيس: تقليص وقت النشر بنسبة 75% في Louis Vuitton، قيادة فريق من 6 مطورين في Tessi، خبرة في البنية السداسية/DDD/TDD، وإعداد مستودعات NX الموحدة وCI/CD في عدة مشاريع.",
+      "availability": "لونيس حاليًا في منصبه في Tessi كـ Technical Lead Frontend. لمناقشة الفرص، تواصل معه عبر LinkedIn أو البريد الإلكتروني على lounesbadji@gmail.com.",
+      "methodology": "يمارس لونيس DDD (التصميم الموجه بالمجال) وTDD والبنية السداسية والمنهجيات الرشيقة. يُعدّ سلاسل CI/CD مع تحليل الجودة، واختبارات E2E باستخدام Cucumber وPlaywright، ومراجعات كود منهجية.",
+      "frontend": "في الواجهة الأمامية، يتقن لونيس TypeScript وAngular وReact وNext.js وJavaScript وHTML5 وCSS3 وTailwind CSS وStorybook وIonic. يمتلك خبرة قوية في Angular وبنية NX الموحدة.",
+      "backend": "في الواجهة الخلفية، يعمل لونيس مع Node.js وNestJS وJava وExpress وREST API وGraphQL. قاد عمليات ترحيل ORM وإعداد البنى السداسية من جانب الخادم.",
+      "saas": "ساهم لونيس في العديد من منصات SaaS: مراقبة العمليات في Tessi، وصناديق التعويضات في GLOBAZ SA، وإدارة الخزينة في Agicap، وحجز المواعيد في MyGladys، ورقمنة المختبرات في Ubilab.",
+      "leadership": "يقود لونيس حاليًا فريقًا من 6 مطورين في Tessi. شغل منصب Technical Lead في MyGladys وUbilab، وHead of Production في Louis Vuitton. يتفوق في التوجيه وتطوير مهارات الفرق.",
+      "globaz": "في GLOBAZ SA (نوفمبر 2022 - أبريل 2023)، طوّر لونيس حل SaaS لصناديق التعويضات السويسرية. أعدّ NX والتسليم المستمر ونظام تصميم ودرّب الفرق على البرمجة الكائنية وهياكل البيانات.",
+      "mygladys": "في MyGladys (ديسمبر 2018 - نوفمبر 2019)، كان لونيس Technical Lead Fullstack. منصة SaaS لحجز المواعيد المهنية. أنشأ متتبع مستخدم، وقاد التواصل مع API بالبرمجة الكائنية، وطوّر تقويم العملاء.",
+      "ubilab": "في Ubilab (سبتمبر 2016 - ديسمبر 2018)، كان لونيس Technical Lead Frontend. منصة SaaS لرقمنة المختبرات والعيادات. طوّر التعليم الإلكتروني من الصفر وأعدّ سلسلة CI/CD.",
+      "trainme": "في TrainMe (فبراير 2016 - يوليو 2016)، تدريب في تطوير التطبيقات المحمولة. تطبيق هجين Ionic لرقمنة الرياضة، ومراسلة فورية، وتقويم لمحترفي الرياضة."
     }
   },
   "footer": {

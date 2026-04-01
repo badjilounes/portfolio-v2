@@ -4,12 +4,11 @@ import { useTranslations } from 'next-intl';
 import ParallaxSection from './ParallaxSection';
 import GlassCard from './GlassCard';
 
-const schoolKeys = ['cpe', 'chartreux', 'saintjust'] as const;
+const schoolKeys = ['cpe', 'chartreux'] as const;
 
-const icons = {
+const icons: Record<string, string> = {
   cpe: '🎓',
   chartreux: '📐',
-  saintjust: '📚',
 };
 
 export default function Education() {
@@ -22,7 +21,7 @@ export default function Education() {
           {t('title')}
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {schoolKeys.map((key, index) => (
             <GlassCard key={key} className="text-center p-8 relative overflow-hidden" delay={index * 0.15}>
               <div
@@ -36,8 +35,11 @@ export default function Education() {
               <p className="font-semibold mb-1" style={{ color: 'var(--accent-light)' }}>
                 {t(`schools.${key}.degree`)}
               </p>
-              <p className="text-sm mb-3" style={{ color: 'var(--secondary)' }}>
+              <p className="text-sm mb-2" style={{ color: 'var(--secondary)' }}>
                 {t(`schools.${key}.field`)}
+              </p>
+              <p className="text-xs mb-3 font-medium" style={{ color: 'var(--text-muted)' }}>
+                {t(`schools.${key}.period`)}
               </p>
               <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
                 {t(`schools.${key}.description`)}

@@ -39,7 +39,8 @@ export default function FeaturedCompanies() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-muted)] mb-12"
+          className="text-center text-sm font-semibold uppercase tracking-[0.2em] mb-12"
+          style={{ color: 'var(--text-muted)' }}
         >
           {t('title')}
         </motion.p>
@@ -63,16 +64,16 @@ export default function FeaturedCompanies() {
                   {company.logo}
                 </div>
 
-                <h3 className="text-xl font-bold text-[var(--text-primary)] mb-1">
+                <h3 className="text-xl font-bold mb-1" style={{ color: 'var(--text-primary)' }}>
                   {t(`${company.key}.company`)}
                 </h3>
-                <p className="text-sm font-semibold text-[var(--accent-light)] mb-1">
+                <p className="text-sm font-semibold mb-1" style={{ color: 'var(--accent-light)' }}>
                   {t(`${company.key}.role`)}
                 </p>
-                <p className="text-xs text-[var(--text-muted)] mb-4">
+                <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
                   {t(`${company.key}.period`)}
                 </p>
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                   {t(`${company.key}.description`)}
                 </p>
               </div>

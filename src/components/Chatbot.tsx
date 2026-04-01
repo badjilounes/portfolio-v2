@@ -21,12 +21,14 @@ const KEYWORD_MAP: Record<string, string[]> = {
     'اتصل', 'تواصل', 'связ', 'контакт',
     'email', 'mail', 'reach', 'joindre', 'phone', 'telephone',
     'hire', 'embaucher', 'recruter', 'recrutement', 'recruiting',
+    'lounesbadji', 'gmail',
   ],
   strength: [
     'strength', 'force', 'fortaleza', 'stärke',
     'قوة', 'نقاط', 'сила', 'сильн',
     'point fort', 'atout', 'advantage', 'avantage', 'quality', 'qualité',
     'why', 'pourquoi', 'warum', 'por qué', 'لماذا', 'почему',
+    '75%', 'deploy', 'deploiement',
   ],
   availability: [
     'available', 'disponible', 'disponible', 'verfügbar',
@@ -37,28 +39,33 @@ const KEYWORD_MAP: Record<string, string[]> = {
     'method', 'méthode', 'método', 'methode',
     'منهج', 'метод',
     'agile', 'scrum', 'kanban', 'tdd', 'test', 'process', 'processus',
-    'ddd', 'cqrs', 'domain', 'driven', 'clean',
+    'ddd', 'cqrs', 'domain', 'driven', 'clean', 'hexagonal',
+    'cucumber', 'playwright', 'e2e',
   ],
   frontend: [
     'frontend', 'front-end', 'front end',
     'الواجهة الأمامية', 'фронтенд',
     'css', 'html', 'tailwind', 'redux', 'rxjs', 'ui', 'interface',
+    'storybook', 'ionic', 'figma',
   ],
   backend: [
     'backend', 'back-end', 'back end',
     'الواجهة الخلفية', 'бэкенд', 'бекенд',
     'server', 'serveur', 'api', 'graphql', 'nestjs', 'express', 'rest',
+    'orm', 'proxy', 'cache',
   ],
   saas: [
     'saas', 'software as a service', 'cloud', 'platform',
     'plateforme', 'plataforma', 'plattform',
     'منصة', 'платформ',
+    'monitoring', 'runtime',
   ],
   leadership: [
     'lead', 'leader', 'leadership', 'manage', 'management',
     'chef', 'direction', 'diriger', 'dirigir', 'leitung',
     'قيادة', 'قائد', 'лидер', 'руковод',
     'mentor', 'mentorat', 'team', 'équipe', 'equipo',
+    'head of production', '6 developpeurs', '6 developers',
   ],
   experience: [
     'experience', 'expérience', 'experiencia', 'erfahrung',
@@ -74,6 +81,7 @@ const KEYWORD_MAP: Record<string, string[]> = {
     'tech', 'technologie', 'tecnología',
     'تقنية', 'технология',
     'stack', 'react', 'typescript', 'node', 'java', 'angular', 'next',
+    'nx', 'monorepo',
   ],
   education: [
     'education', 'formation', 'formación', 'ausbildung',
@@ -81,7 +89,8 @@ const KEYWORD_MAP: Record<string, string[]> = {
     'école', 'school', 'escuela', 'schule', 'مدرسة', 'школа',
     'diplôme', 'degree', 'título', 'abschluss', 'شهادة', 'диплом',
     'cpe', 'ingénieur', 'engineer', 'university', 'université',
-    'chartreux', 'saint just', 'bac',
+    'chartreux', 'preparatoire', 'prepa', 'bac',
+    'telecom', 'reseau', 'networking',
   ],
   location: [
     'location', 'lieu', 'ubicación', 'standort',
@@ -92,10 +101,12 @@ const KEYWORD_MAP: Record<string, string[]> = {
   lv: [
     'vuitton', 'louis vuitton', 'lv', 'lvmh',
     'luxe', 'luxury', 'lujo', 'luxus', 'فخامة', 'люкс',
+    'head of production',
   ],
   agicap: [
     'agicap', 'trésorerie', 'cash', 'treasury',
     'tresoreria', 'خزينة', 'казначейство',
+    'billing', 'facturation', 'recouvrement', 'collection',
   ],
   current: [
     'current', 'actuel', 'actual', 'aktuell',
@@ -114,17 +125,23 @@ const KEYWORD_MAP: Record<string, string[]> = {
     'لغة', 'язык',
     'programming', 'programmation', 'programación', 'programmierung',
     'برمجة', 'программирование',
+    'english', 'anglais', 'french', 'français', 'b2',
   ],
   teaching: [
     'teach', 'enseign', 'profesor', 'dozent',
     'مدرس', 'преподаватель',
     'icoges', 'teacher', 'enseignant', 'formateur', 'prof',
-    'cours', 'course',
+    'instructor', 'cours', 'course', 'bts',
   ],
-  globaz: ['globaz', 'suisse', 'switzerland', 'schweiz', 'سويسرا', 'швейцария', 'assurance', 'insurance'],
-  mygladys: ['mygladys', 'gladys', 'conciergerie', 'concierge'],
-  ubilab: ['ubilab'],
-  trainme: ['trainme', 'mobile', 'coaching', 'sport'],
+  globaz: ['globaz', 'suisse', 'switzerland', 'schweiz', 'سويسرا', 'швейцария', 'assurance', 'insurance', 'compensation', 'caisse'],
+  mygladys: ['mygladys', 'gladys', 'conciergerie', 'concierge', 'rendez-vous', 'appointment'],
+  ubilab: ['ubilab', 'laboratoire', 'laboratory', 'clinique', 'clinic', 'hospital', 'hopital', 'e-learning'],
+  trainme: ['trainme', 'coaching', 'sport', 'stage', 'internship', 'intern'],
+  cv: [
+    'cv', 'resume', 'résumé', 'curriculum', 'lebenslauf', 'سيرة ذاتية', 'резюме',
+    'pdf', 'download', 'telecharger', 'télécharger', 'descargar', 'herunterladen', 'تحميل', 'скачать',
+    'voir', 'view', 'consulter', 'visualiser', 'show', 'open', 'ouvrir',
+  ],
 };
 
 export default function Chatbot() {
@@ -156,12 +173,11 @@ export default function Chatbot() {
       for (const keyword of keywords) {
         const normalizedKeyword = keyword.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         if (lower.includes(normalizedKeyword)) {
-          scores[key] += normalizedKeyword.length; // Longer matches score higher
+          scores[key] += normalizedKeyword.length;
         }
       }
     }
 
-    // Find the best match
     let bestKey = '';
     let bestScore = 0;
     for (const [key, score] of Object.entries(scores)) {
@@ -255,14 +271,14 @@ export default function Chatbot() {
             <div className="p-4" style={{ borderBottom: '1px solid var(--glass-border)', background: 'var(--glass-bg)' }}>
               <div className="flex items-center gap-3">
                 <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold"
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold"
                   style={{ background: 'linear-gradient(135deg, var(--accent), var(--secondary))' }}
                 >
                   LB
                 </div>
                 <div>
                   <h3 className="text-sm font-bold" style={{ color: 'var(--text-primary)' }}>{t('title')}</h3>
-                  <div className="flex items-center gap-1.5">
+                  <div className="flex items-center gap-1">
                     <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                     <span className="text-xs" style={{ color: 'var(--text-muted)' }}>Online</span>
                   </div>
@@ -281,13 +297,13 @@ export default function Chatbot() {
                   className={`flex ${msg.isBot ? 'justify-start' : 'justify-end'}`}
                 >
                   <div
-                    className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
-                      msg.isBot ? 'rounded-tl-sm' : 'rounded-tr-sm'
-                    }`}
-                    style={msg.isBot
-                      ? { background: 'var(--glass-bg)', color: 'var(--text-secondary)', border: '1px solid var(--glass-border)' }
-                      : { background: 'var(--accent)', color: 'white' }
-                    }
+                    className="max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed"
+                    style={{
+                      background: msg.isBot ? 'var(--glass-bg)' : 'var(--accent-glow)',
+                      color: 'var(--text-primary)',
+                      borderTopLeftRadius: msg.isBot ? '4px' : undefined,
+                      borderTopRightRadius: msg.isBot ? undefined : '4px',
+                    }}
                   >
                     {msg.text}
                   </div>
@@ -299,7 +315,7 @@ export default function Chatbot() {
                   animate={{ opacity: 1 }}
                   className="flex justify-start"
                 >
-                  <div className="px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1.5" style={{ background: 'var(--glass-bg)', border: '1px solid var(--glass-border)' }}>
+                  <div className="px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1.5" style={{ background: 'var(--glass-bg)' }}>
                     <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '0ms' }} />
                     <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '150ms' }} />
                     <span className="w-2 h-2 rounded-full animate-bounce" style={{ background: 'var(--text-muted)', animationDelay: '300ms' }} />
