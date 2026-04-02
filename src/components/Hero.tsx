@@ -2,25 +2,33 @@
 
 import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Hero() {
   const t = useTranslations('hero');
   const ref = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768 || 'ontouchstart' in window);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start start', 'end start'],
   });
 
-  const textY = useTransform(scrollYProgress, [0, 1], [0, 350]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.4], [1, 0.85]);
-  const gridY = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const textY = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 50 : 350]);
+  const textOpacity = useTransform(scrollYProgress, [0, isMobile ? 0.6 : 0.4], [1, 0]);
+  const gridY = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 30 : 150]);
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated grid background with parallax */}
-      <motion.div className="absolute inset-0 opacity-[0.04]" style={{ y: gridY }}>
+      <motion.div className="absolute inset-0 opacity-[0.04]" style={isMobile ? undefined : { y: gridY }}>
         <div
           className="absolute inset-0"
           style={{
@@ -37,7 +45,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--bg-primary)_70%)]" />
 
       <motion.div
-        style={{ y: textY, opacity: textOpacity, scale }}
+        style={isMobile ? { opacity: textOpacity } : { y: textY, opacity: textOpacity }}
         className="relative z-10 text-center px-4 max-w-5xl mx-auto"
       >
         <motion.p
@@ -51,36 +59,36 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gradient-text leading-tight"
+          className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 gradient-text leading-tight"
         >
           {t('name')}
         </motion.h1>
 
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl md:text-2xl lg:text-3xl font-light mb-8"
+          className="text-lg md:text-2xl lg:text-3xl font-light mb-8"
           style={{ color: 'var(--text-secondary)' }}
         >
           {t('title')}
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-base md:text-lg max-w-2xl mx-auto mb-12"
+          className="text-sm md:text-lg max-w-2xl mx-auto mb-12"
           style={{ color: 'var(--text-muted)' }}
         >
           {t('subtitle')}
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -108,12 +116,12 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator - hidden on mobile */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute -bottom-16 left-1/2 -translate-x-1/2"
+          className="hidden md:block absolute -bottom-16 left-1/2 -translate-x-1/2"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}

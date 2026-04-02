@@ -1,6 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160">
-  <g fill="#a67c00">
-    <polygon points="30,10 45,10 45,110 85,110 85,125 30,125" />
-    <polygon points="75,10 92,10 120,95 148,10 165,10 130,125 110,125" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340">
+  <!-- Louis Vuitton classic interlocking LV monogram -->
+  <g fill="#1a1a1a">
+    <!-- V shape (behind) -->
+    <path d="M200,290 L90,50 L90,30 L118,30 L118,50 L200,240 L282,50 L282,30 L310,30 L310,50 Z"/>
+    <!-- L shape (in front, overlapping the V) -->
+    <path d="M120,30 L148,30 L148,250 L260,250 L260,278 L120,278 Z"/>
+    <!-- Serifs on L bottom -->
+    <path d="M100,265 L120,250 L120,278 L100,278 Z"/>
+    <path d="M260,278 L280,278 L280,250 L260,250 Z"/>
+    <!-- Serifs on V top left -->
+    <path d="M70,30 L90,30 L90,60 L70,50 Z"/>
+    <!-- Serifs on V top right -->
+    <path d="M310,30 L330,30 L330,50 L310,60 Z"/>
   </g>
 </svg>

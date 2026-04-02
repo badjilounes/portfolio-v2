@@ -26,8 +26,8 @@ const featured = [
     glow: 'rgba(99, 102, 241, 0.15)',
     border: 'border-indigo-500/20',
     logoColor: '#6366f1',
-    logoBg: 'rgba(99, 102, 241, 0.1)',
-    logoSize: 50,
+    logoBg: 'transparent',
+    logoSize: 56,
   },
   {
     key: 'agicap',
@@ -74,7 +74,7 @@ export default function FeaturedCompanies() {
               <div className="relative">
                 {/* Company Logo */}
                 <div
-                  className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 shadow-lg"
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 overflow-hidden"
                   style={{ background: company.logoBg, border: `1px solid ${company.logoColor}30` }}
                 >
                   <Image
@@ -83,7 +83,6 @@ export default function FeaturedCompanies() {
                     width={company.logoSize}
                     height={company.logoSize}
                     className="object-contain"
-                    style={{ color: company.logoColor, filter: `drop-shadow(0 0 1px ${company.logoColor})` }}
                   />
                 </div>
 

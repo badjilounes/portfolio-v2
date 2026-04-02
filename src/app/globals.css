@@ -311,6 +311,35 @@ body {
   animation: shimmer 3s ease-in-out infinite;
 }
 
+/* ===== MOBILE PERFORMANCE ===== */
+@media (max-width: 767px), (hover: none) {
+  .bg-orb {
+    animation: none !important;
+    opacity: 0.08;
+  }
+
+  .bg-orb-1 { width: 400px; height: 400px; }
+  .bg-orb-2 { width: 350px; height: 350px; }
+  .bg-orb-3 { width: 300px; height: 300px; }
+
+  .bg-noise { display: none; }
+
+  .glass, .glass-strong {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .glass-hover:hover {
+    transform: none;
+  }
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-orb { animation: none !important; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
 /* Duration utility */
 .duration-400 {
   transition-duration: 400ms;

@@ -17,10 +17,10 @@ export default function GlassCard({
 }: GlassCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.6, delay, ease: [0.4, 0, 0.2, 1] }}
+      viewport={{ once: true, margin: '-30px' }}
+      transition={{ duration: 0.5, delay, ease: [0.4, 0, 0.2, 1] }}
       className={`glass ${hover ? 'glass-hover' : ''} p-6 ${className}`}
     >
       {children}

@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <g fill="#10b981">
-    <path d="M100,20 L170,160 L140,160 L120,115 L80,115 L60,160 L30,160 Z M100,55 L87,100 L113,100 Z" fill-rule="evenodd" />
+  <!-- Agicap logo: circle with wave/field lines inside -->
+  <g fill="none" stroke="#3B72F6" stroke-width="8" stroke-linecap="round">
+    <!-- Outer circle -->
+    <circle cx="100" cy="100" r="88" />
+    <!-- Top arc / book-like open shape -->
+    <path d="M55,75 Q78,55 100,55 Q122,55 145,75"/>
+    <!-- Middle wave -->
+    <path d="M45,100 Q67,80 100,80 Q133,80 155,100"/>
+    <!-- Bottom wave -->
+    <path d="M50,125 Q72,105 100,105 Q128,105 150,125"/>
+    <!-- Lowest wave -->
+    <path d="M60,148 Q80,130 100,130 Q120,130 140,148"/>
   </g>
 </svg>
